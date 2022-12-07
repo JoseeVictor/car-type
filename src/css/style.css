@@ -43,6 +43,7 @@ main {
     border: none;
     border-radius: 30px;
     background-color: var(--bg-button);
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 
