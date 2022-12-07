@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px;
+}
+
+.info {
+    padding: 50px;
+}
+
+.info img {
+    margin-bottom: 30px;
+}
+
+.info h1 {
+    margin-bottom: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.info p {
+    line-height: 25px;
+    margin-bottom: 60px;
+    color: var(--color-p);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.info button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--bg-button);
+}
+
+
+/* SEDANS */
+.sedans {
+    background-color: var(--bg-sedans);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.sedans button {
+    border: 1px solid var(--bg-sedans);
+    color: var(--bg-sedans);
+}
+
+.sedans button:hover {
+    background-color: var(--bg-sedans);
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+/* SUVS */
+.suvs {
+    background-color: var(--bg-suvs);
+}
+
+.suvs button {
+    border: 1px solid var(--bg-suvs);
+    color: var(--bg-suvs);
+}
+
+.suvs button:hover {
+    background-color: var(--bg-suvs);
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+/* LUXURY */
+.luxury {
+    background-color: var(--bg-luxury);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.luxury button {
+    border: 1px solid var(--bg-luxury);
+    color: var(--bg-luxury);
+}
+
+.luxury button:hover {
+    background-color: var(--bg-luxury);
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+@media (max-width:870px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .sedans {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .luxury{
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
